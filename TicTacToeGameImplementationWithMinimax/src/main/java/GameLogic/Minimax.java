@@ -250,6 +250,7 @@ public class Minimax {
 
 
         moves.addAll(state.getCoordinates().stream().filter(c -> !c.isMarked()).collect(Collectors.toList()));
+
         return moves;
     }
 

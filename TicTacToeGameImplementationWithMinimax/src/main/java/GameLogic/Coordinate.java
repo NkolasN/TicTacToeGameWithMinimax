@@ -1,7 +1,5 @@
 package GameLogic;
 import constants.Constants;
-
-
 import static constants.Constants.Player.O;
 import static constants.Constants.Player.X;
 
@@ -16,7 +14,6 @@ public class Coordinate{
     private int y;
     private boolean isMarked;
     private String markedWith;
-
 
 
     public Coordinate(int x, int y){
