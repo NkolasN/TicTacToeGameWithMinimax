@@ -190,7 +190,7 @@ public class Minimax {
             } else if (score == -1) {
                 return 0;
             } else {
-                score = 0;
+                score = 1;
             }
         } else if (c.get(1).markedWith("X")) {
             if (score == -1) {
@@ -198,7 +198,7 @@ public class Minimax {
             } else if (score == 1) {
                 return 0;
             } else {
-                score = 0;
+                score = -1;
             }
         }
 
