@@ -77,6 +77,7 @@ public class State {
         this.turn = next;
     }
 
+
     /**
      * Getter method returning the current status of the game i.e if it is still
      * ongoing or who has won if it has ended
@@ -211,7 +212,7 @@ public class State {
         hasEnded = false;
         return ONGOING;
 
-        }
+     }
 
 
     /**
