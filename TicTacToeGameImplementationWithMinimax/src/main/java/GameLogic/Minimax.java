@@ -118,6 +118,7 @@ public class Minimax {
         );
 
         /* Create three lists representing the  columns */
+
         List<Coordinate> lineColumn0 = new ArrayList<>();
         lineColumn0.addAll(IntStream.iterate(0,i->i+3).limit(3)//add to lineColumn0 the elements state.getCoordinates().get({0,3,6})
                 .mapToObj(i->state.getCoordinates().get(i))
