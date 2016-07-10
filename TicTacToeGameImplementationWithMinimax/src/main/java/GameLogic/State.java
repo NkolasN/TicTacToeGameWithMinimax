@@ -225,9 +225,7 @@ public class State {
 
         if(outcome == DRAW){
             this.gameState = DRAW;
-        }
-
-        else{
+        } else{
           this.gameState=outcome;
         }
 
@@ -277,8 +275,6 @@ public class State {
     public void setHasEnded() {
         this.hasEnded = hasEnded;
     }
-
-
 
 }
 
