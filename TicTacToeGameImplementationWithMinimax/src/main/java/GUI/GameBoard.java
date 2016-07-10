@@ -77,12 +77,10 @@ class GameBoard extends JPanel {
 
                 g2.drawOval(x0, y0, 68, 68);
 
-
             }
         });
 
           gameStatus.setText("Status: " + prettyFormatState(state.getState()));
-
 
     }
 
@@ -95,7 +93,6 @@ class GameBoard extends JPanel {
         this.state = state;
     }
 
-
     /**
      * Maps the game status to a string
      * @param state the internal game state
@@ -103,7 +100,6 @@ class GameBoard extends JPanel {
      *         Playing when state = ONGOING
      *         X Won! when state = X_WINS
      *         O Won! when state = O_WINS
-
      */
     public String prettyFormatState(Constants.GameState state){
 
