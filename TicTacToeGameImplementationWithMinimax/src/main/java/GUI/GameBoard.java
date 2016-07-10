@@ -92,6 +92,7 @@ class GameBoard extends JPanel {
         this.state = state;
     }
 
+
     /**
      * Maps the game status to a string
      * @param state the internal game state
