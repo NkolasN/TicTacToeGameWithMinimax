@@ -22,6 +22,7 @@ class GameBoard extends JPanel {
         this.gameStatus = gameStatus;
     }
 
+
     /**
      * Draws the game cells and updates the game status label with the current status
      * of the game.
