@@ -30,7 +30,6 @@ class GameBoard extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
 
-
         super.paintComponent(g);
         setBackground(Color.BLACK);
         g.setColor(Color.WHITE);
@@ -54,7 +53,6 @@ class GameBoard extends JPanel {
                     g2.setColor(Color.WHITE);
 
                 }
-
 
                 int x0 = c.getY() * 100 + 16;
                 int y0 = c.getX() * 100 + 16;
