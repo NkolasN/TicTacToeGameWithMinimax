@@ -1,6 +1,6 @@
-package GUI;
+package gui;
 
-import GameLogic.State;
+import gamelogic.State;
 import constants.Constants;
 import javax.swing.*;
 import java.awt.*;

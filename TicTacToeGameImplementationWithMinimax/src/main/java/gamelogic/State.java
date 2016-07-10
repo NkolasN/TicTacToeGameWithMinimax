@@ -1,4 +1,4 @@
-package GameLogic;
+package gamelogic;
 
 import constants.Constants;
 

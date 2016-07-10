@@ -1,4 +1,4 @@
-package GameLogic;
+package gamelogic;
 
 import constants.Constants;
 import java.util.ArrayList;
@@ -91,50 +91,53 @@ public class Minimax {
 
 
     /**
-     * Calculates the total score, given a game state
-     * @return the score
+     * Calculates the total score, given a game state.
+     * <p> The method first creates lists representing the rows,
+     * columns and diagonals and then returns a total score out
+     * of individual scores calculated from every line</p>
+     * @return the total score
      */
     private int calculateScore() {
 
          /* Create three lists representing the  rows */
 
         List<Coordinate> lineRow0 = new ArrayList<>();
-        lineRow0.addAll(IntStream.range(0,3) //add to lineRow0 the elements state.getCoordinates().get({0,1,2})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        lineRow0.addAll(IntStream.range(0,3)
+                        .mapToObj(i->state.getCoordinates().get(i))
+                        .collect(Collectors.toList())
         );
 
         List<Coordinate> lineRow1 = new ArrayList<>();
-        lineRow1.addAll(IntStream.range(3,6) //add to lineRow0 the elements state.getCoordinates().get({3,4,5)
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        lineRow1.addAll(IntStream.range(3,6)
+                        .mapToObj(i->state.getCoordinates().get(i))
+                        .collect(Collectors.toList())
         );
 
 
         List<Coordinate> lineRow2 = new ArrayList<>();
-        lineRow2.addAll(IntStream.range(6,9) //add to lineRow2 the elements state.getCoordinates().get({6,7,8})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        lineRow2.addAll(IntStream.range(6,9)
+                        .mapToObj(i->state.getCoordinates().get(i))
+                        .collect(Collectors.toList())
         );
 
         /* Create three lists representing the  columns */
 
         List<Coordinate> lineColumn0 = new ArrayList<>();
-        lineColumn0.addAll(IntStream.iterate(0,i->i+3).limit(3)//add to lineColumn0 the elements state.getCoordinates().get({0,3,6})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        lineColumn0.addAll(IntStream.iterate(0,i->i+3).limit(3)
+                           .mapToObj(i->state.getCoordinates().get(i))
+                           .collect(Collectors.toList())
         );
 
         List<Coordinate> lineColumn1 = new ArrayList<>();
-        lineColumn1.addAll(IntStream.iterate(1,i->i+3).limit(3) //add to lineColumn1 the elements state.getCoordinates().get({1,4,7})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        lineColumn1.addAll(IntStream.iterate(1,i->i+3).limit(3)
+                           .mapToObj(i->state.getCoordinates().get(i))
+                           .collect(Collectors.toList())
         );
 
         List<Coordinate> lineColumn2 = new ArrayList<>();
-        lineColumn2.addAll(IntStream.iterate(2,i->i+3).limit(3) //add to lineColumn2 the elements state.getCoordinates().get({2,5,8})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        lineColumn2.addAll(IntStream.iterate(2,i->i+3).limit(3)
+                          .mapToObj(i->state.getCoordinates().get(i))
+                          .collect(Collectors.toList())
         );
 
 
@@ -142,15 +145,15 @@ public class Minimax {
 
         List<Coordinate> diag0 = new ArrayList<>();
 
-        diag0.addAll(IntStream.iterate(0,i->i+4).limit(3) //add to diag0 the elements state.getCoordinates().get({0,4,8})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        diag0.addAll(IntStream.iterate(0,i->i+4).limit(3)
+                     .mapToObj(i->state.getCoordinates().get(i))
+                     .collect(Collectors.toList())
         );
 
         List<Coordinate> diag1 = new ArrayList<>();
-        diag1.addAll(IntStream.iterate(2,i->i+2).limit(3) //add to diag1 the elements state.getCoordinates().get({2,4,6})
-                .mapToObj(i->state.getCoordinates().get(i))
-                .collect(Collectors.toList())
+        diag1.addAll(IntStream.iterate(2,i->i+2).limit(3)
+                     .mapToObj(i->state.getCoordinates().get(i))
+                     .collect(Collectors.toList())
         );
 
 

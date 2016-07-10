@@ -1,8 +1,8 @@
-package GUI;
+package gui;
 
-import GameLogic.Coordinate;
-import GameLogic.Minimax;
-import GameLogic.State;
+import gamelogic.Coordinate;
+import gamelogic.Minimax;
+import gamelogic.State;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
 

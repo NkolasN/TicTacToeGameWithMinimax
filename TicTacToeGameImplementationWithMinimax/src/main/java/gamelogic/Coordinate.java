@@ -1,4 +1,4 @@
-package GameLogic;
+package gamelogic;
 import constants.Constants;
 import static constants.Constants.Player.O;
 import static constants.Constants.Player.X;
