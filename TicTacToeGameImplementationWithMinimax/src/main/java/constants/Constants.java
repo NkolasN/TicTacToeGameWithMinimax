@@ -12,6 +12,7 @@ public class Constants {
     public static final int RESTART_BUTTON_WIDTH = 70;
     public static final int RESTART_BUTTON_HEIGHT = 50;
     public static final int MINIMAX_DEPTH = 9;
+
     /**
      * An enum representing the game status.
      */
