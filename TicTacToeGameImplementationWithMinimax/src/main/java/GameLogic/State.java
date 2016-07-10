@@ -205,11 +205,14 @@ public class State {
             }
         }
 
-        if(draw) {return DRAW;}
+        if(draw) {
+          return DRAW;
+        }
 
        winningPattern.clear();
 
-        hasEnded = false;
+       hasEnded = false;
+
         return ONGOING;
 
      }
