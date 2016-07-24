@@ -114,7 +114,7 @@ public class State {
     public GameState gameEnded(Coordinate coordinate, Constants.Player xo) {
         List<Coordinate> ar1 = new ArrayList<>();
         List<Coordinate> ar2 = new ArrayList<>();
-        String x_o=xo == X ? "X" : "O"; //string representation of xo
+        String x_o = xo == X ? "X" : "O"; //string representation of xo
         GameState outcomeToReturn = xo == X ? X_WINS : O_WINS; //returned only in the case where the player has won
         boolean horizontal = true;
         boolean vertical = true;
