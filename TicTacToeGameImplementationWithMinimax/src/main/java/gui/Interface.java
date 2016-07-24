@@ -119,7 +119,7 @@ public class Interface{
                             GameState newState = state.gameEnded(new Coordinate(selectedRow,selectedColumn),X);
                             switch(newState){
                                 case  X_WINS : state.setEnded(X_WINS); break;
-                                case DRAW : state.setEnded(DRAW);
+                                case  DRAW   : state.setEnded(DRAW);
 
                             }
 
