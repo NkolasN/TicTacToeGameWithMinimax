@@ -242,8 +242,8 @@ public class State {
      */
     public void reset(){
         coordinates.forEach(c->c.setUnmarked());
-        gameState=ONGOING;
-        turn=X;
+        gameState = ONGOING;
+        turn = X;
     }
 
     /**
