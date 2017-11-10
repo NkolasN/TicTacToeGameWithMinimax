@@ -15,7 +15,6 @@ public class Coordinate{
     private boolean isMarked;
     private String markedWith;
 
-
     public Coordinate(int x, int y){
            this.x = x;
            this.y = y;
@@ -106,5 +105,4 @@ public class Coordinate{
         int y = ((Coordinate)o).getY();
         return this.x == x && this.y == y;
     }
-
 }
