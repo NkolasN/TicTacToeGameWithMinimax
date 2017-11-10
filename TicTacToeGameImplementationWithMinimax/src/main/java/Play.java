@@ -7,9 +7,6 @@ import gui.Interface;
 public class Play {
 
     public static void main(String[] args){
-
         Interface newGame=new Interface();
-
     }
-
 }
