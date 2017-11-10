@@ -142,7 +142,6 @@ public class State {
             winningPattern.clear();
         }
 
-
         /*
          * Check for a vertical end of game
          */
@@ -232,8 +231,6 @@ public class State {
         } else{
           this.gameState=outcome;
         }
-
-
     }
 
     /**
